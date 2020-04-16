@@ -1,0 +1,1 @@
+from .views_fbv import companies_list, company_detail, vacancies_by_company, vacancies_list, vacancy_detail, top_vacancies
