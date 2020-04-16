@@ -85,7 +85,7 @@ def vacancies_list(request):
                         status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 @api_view(['GET', 'PUT', 'DELETE'])
-def vacancy_detail(request, company_id):
+def vacancies_detail(request, company_id):
     try:
         vacancy = Vacancy.objects.get(id= vacancy_id)
     except Vacancy.DoesNotExist as e:
